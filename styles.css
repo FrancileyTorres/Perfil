@@ -1,0 +1,167 @@
+:root {
+  --primary-color: #1e40af; /* Azul escuro para header e seções principais */
+  --secondary-color: #3b82f6; /* Azul claro para gradientes e fundos */
+  --accent-color: #f97316; /* Laranja vibrante para botões e destaques */
+  --accent-dark: #ea580c; /* Laranja mais escuro para hover */
+  --text-color: #111827; /* Cinza escuro para texto */
+  --bg-light: #f9fafb; /* Cinza claro para fundos */
+  --bg-dark: #1f2937; /* Cinza escuro para rodapé */
+  --white: #ffffff; /* Branco puro */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  color: var(--text-color);
+  background-color: var(--bg-light);
+}
+
+/* Header */
+header {
+  background-color: var(--text-color);
+  color: var(--white);
+}
+
+header a {
+  color: var(--white);
+}
+
+header a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+#home {
+  background: linear-gradient(to right, var(--bg-dark), var(--text-color));
+  color: var(--white);
+}
+
+#home a {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#home a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Sobre Section */
+#sobre {
+  background-color: var(--white);
+}
+
+#sobre h2 {
+  color: var(--primary-color);
+}
+
+/* Projetos Section */
+#projetos {
+  background-color: var(--bg-light);
+}
+
+#projetos h2 {
+  color: var(--primary-color);
+}
+
+#projetos .bg-white {
+  background-color: var(--white);
+  border: 1px solid #e5e7eb;
+}
+
+#projetos .hover-scale:hover {
+  border-color: var(--accent-color);
+}
+
+/* Formação Section */
+#formacao {
+  background-color: var(--white);
+}
+
+#formacao h2 {
+  color: var(--primary-color);
+}
+
+#formacao .border-accent {
+  border-color: var(--accent-color);
+}
+
+/* Habilidades Section */
+#habilidades {
+  background-color: var(--bg-light);
+}
+
+#habilidades h2 {
+  color: var(--primary-color);
+}
+
+#habilidades .bg-white {
+  background-color: var(--white);
+  border: 1px solid #e5e7eb;
+}
+
+#habilidades .hover-scale:hover {
+  border-color: var(--accent-color);
+}
+
+/* Experiência Section */
+#experiencia {
+  background-color: var(--white);
+}
+
+#experiencia h2 {
+  color: var(--primary-color);
+}
+
+#experiencia .bg-gray-50 {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+/* Contato Section */
+#contato {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+#contato h2 {
+  color: var(--white);
+}
+
+#contato a {
+  color: var(--accent-color);
+}
+
+#contato a:hover {
+  color: var(--accent-dark);
+}
+
+#contato input,
+#contato textarea {
+  background-color: var(--white);
+  color: var(--text-color);
+  border: 1px solid #d1d5db;
+}
+
+#contato button {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+#contato button:hover {
+  background-color: var(--accent-dark);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-dark);
+  color: var(--white);
+}
+
+/* Animações */
+.hover-scale {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
